@@ -45,7 +45,7 @@ jobs:
         with:
           context: yamdb:v1
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:v1
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -61,7 +61,7 @@ jobs:
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
