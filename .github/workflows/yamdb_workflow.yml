@@ -43,9 +43,9 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          context: yamdb
+          context: yamdb:v1
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:v1
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -61,7 +61,7 @@ jobs:
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb:v1
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
