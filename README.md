@@ -10,7 +10,7 @@ scp docker-compose.yaml <логин_на_сервере>@<IP_сервера>:/ho
 scp default.conf <логин_на_сервере>@<IP_сервера>:/home/<логин_на_сервере>/nginx/
 ```
 
-Добавить в Sec rets на Github следующие данные:
+Добавить в Sec rets на  Github следующие данные:
 ```
 DB_ENGINE=django.db.backends.postgresql # указать, что проект работает с postgresql
 DB_NAME=postgres # имя базы данных
