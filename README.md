@@ -1,6 +1,16 @@
 # Проект YaMDB
 ![Github actions](https://github.com/vikomsk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+## Активные ссылки для проверки проекта(ревью)
+Имя пользователя Vik, пароль 111
+http://51.250.30.231/
+http://51.250.30.231/admin/
+http://51.250.30.231/admin/reviews/genre/
+http://51.250.30.231/admin/reviews/category/
+http://51.250.30.231/admin/reviews/review/
+http://51.250.30.231/admin/reviews/user/
+http://51.250.30.231/admin/reviews/title/
+
 ## Как запустить проект на боевом сервере:
 
 Установить на сервере docker и docker-compose.
