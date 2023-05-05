@@ -1,7 +1,8 @@
 # Проект YaMDB
 ![Github actions](https://github.com/vikomsk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 IP сервера http://51.250.30.231/
-## В API доступны следующие эндпоинты:
+## В API доступны следующие  эндпоинты:
 
 * ```http://127.0.0.1:8000/api/v1/auth/signup/``` POST-запрос — получение кода подтверждения (confirmation_code) на указанный email.
 
