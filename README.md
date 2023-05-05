@@ -4,7 +4,7 @@
 IP сервера http://51.250.30.231/
 ## В API доступны следующие  эндпоинты:
 
-* ```http://127.0.0.1:8000/api/v1/auth/signup/``` POST-запрос — получение кода подтверждения (confirmation_code) на указанный email.
+* ```http://127.0.0.1:8000/api/v1/auth/signup/``` POST-запрос — плучение кода подтверждения (confirmation_code) на указанный email.
 
 * ```http://127.0.0.1:8000/api/v1/auth/token/``` POST-запрос — получение Access-токена в обмен на username и confirmation_code.
 
